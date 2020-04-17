@@ -95,6 +95,19 @@ var VersionList = []Version{
 
 	// CustomResourceDefinition
 	{"apiextensions.k8s.io/v1beta1", "CustomResourceDefinition", "v1.16.0", "v1.19.0", "apiextensions.k8s.io/v1"},
+
+	// Rbac
+	{"rbac.authorization.k8s.io/v1alpha1", "ClusterRoleBinding", "v1.17.0", "v1.20.0", "rbac.authorization.k8s.io/v1"},
+	{"rbac.authorization.k8s.io/v1alpha1", "ClusterRole", "v1.17.0", "v1.20.0", "rbac.authorization.k8s.io/v1"},
+	{"rbac.authorization.k8s.io/v1alpha1", "ClusterRoleBindingList", "v1.17.0", "v1.20.0", "rbac.authorization.k8s.io/v1"},
+	{"rbac.authorization.k8s.io/v1alpha1", "ClusterRoleList", "v1.17.0", "v1.20.0", "rbac.authorization.k8s.io/v1"},
+	{"rbac.authorization.k8s.io/v1alpha1", "Role", "v1.17.0", "v1.20.0", "rbac.authorization.k8s.io/v1"},
+	{"rbac.authorization.k8s.io/v1alpha1", "RoleBinding", "v1.17.0", "v1.20.0", "rbac.authorization.k8s.io/v1"},
+	{"rbac.authorization.k8s.io/v1alpha1", "RoleList", "v1.17.0", "v1.20.0", "rbac.authorization.k8s.io/v1"},
+	{"rbac.authorization.k8s.io/v1alpha1", "RoleBindingList", "v1.17.0", "v1.20.0", "rbac.authorization.k8s.io/v1"},
+
+	//CSINode
+	{"storage.k8s.io/v1beta1", "CSINode", "v1.17.0", "", ""},
 }
 
 func checkVersion(stub *Stub) *Version {
